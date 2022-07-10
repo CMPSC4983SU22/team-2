@@ -1,0 +1,289 @@
+@import url(../../assets/styles/variables.css);
+
+.header_image_slides {
+    object-fit: cover;
+    block-size: auto;
+    height: 70vh;
+}
+
+.header_content {
+    right: 10%;
+    top: 15%;
+    transform: translate(0%, 100%);
+}
+
+.header_content .cta_product {
+    display: inline-block;
+    padding: 1.2rem 4.5rem;
+    border-radius: 0;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.header_h1, .header_off {
+    font-size: 4.5rem;
+}
+
+.header_off {
+    color: var(--red);
+}
+
+.layout_padding {
+    padding: 7rem 0;
+}
+
+.why_section .container_group {
+    margin: 0 auto;
+}
+
+.section_row {
+    gap: 5rem;
+}
+
+.heading_container h2::after {
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 5px;
+    background: var(--primary-color);
+    margin: 1rem auto 1rem;
+}
+
+.why_section .why_item {
+    margin-top: 4.5rem;
+    background-color: var(--primary-color);
+    padding: 4.5rem 5rem;
+    color: var(--white);
+}
+
+.detail_box h5 {
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.detail_box p {
+    font-size: 1.6rem;
+}
+
+.product_box {
+    margin-top: 2.5rem;
+    padding: 3.5rem;
+    background-color: var(--product-bg);
+    overflow: hidden;
+    box-shadow: 5px 5px 5px -5px var(--box-shadow);
+    border: 10px solid var(--product-hover-bg);
+    width: 30rem;
+}
+
+.product_box:hover .option_container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.product_section .option_container {
+    background-color: var(--product-hover-bg);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+    transform: translateY(100%);
+}
+
+.product_section .options a {
+    display: inline-block;
+    width: 16.5rem;
+    margin: 5px 0;
+}
+
+.cta_product {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+}
+
+.product_section .img_box {
+    height: 21.5rem;
+}
+
+.product_section .img_box img {
+    max-width: 100%;
+    max-height: 16rem;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.product_section .detail_box h5 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.product_section .container_group {
+    width: 60%;
+}
+
+.new_arrivals_section {
+    gap: 5rem;
+}
+
+.new_arrivals_box {
+    padding: 3rem 5rem;
+    background-color: var(--product-bg);
+    border: 5px solid var(--white);
+}
+
+.new_arrivals_content {
+    height: 95%;
+}
+
+.season_collection {
+    margin-top: auto;
+}
+
+.season_collection p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+footer {
+    background-color: var(--box-shadow);
+}
+
+footer .copy_rights {
+    gap: 1rem;
+}
+
+.shop_icons {
+    width: 5.5rem;
+    filter: grayscale(1) invert(1);
+}
+
+footer .copy_rights p {
+    font-size: 1.6rem;
+}
+
+footer .copy_rights i {
+    font-size: 2.6rem;
+}
+
+.copy_rights i:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:29em) {
+    .new_arrivals_section {
+        flex-wrap: wrap;
+    }
+
+    .product_section .container_group {
+        margin: 0;
+        width: 100%;
+    }
+
+    .product_section .container_group .section_row {
+        display: unset;
+    }
+
+    .new_arrivals_section .new_arrivals_box {
+        flex-direction: column;
+    }
+
+    .new_arrivals_content .season_collection {
+        text-align: center;
+    }
+
+    .new_arrivals_content .season_collection h4 {
+        font-size: 2rem;
+    }
+
+    .new_arrivals_box img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .nav_search {
+        display: none;
+    }
+
+    .header_group img {
+        object-fit: contain;
+        height: auto;
+    }
+
+    .header_group .header_content {
+        top: 50%;
+        right: 3%;
+        transform: unset;
+    }
+
+    .header_group .header_content .header_h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 0.8rem 0;
+    }
+
+    .header_off {
+        font-size: 2rem;
+    }
+
+    .header_group .header_content .cta_product {
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .why_section .heading_container h2 {
+        font-size: 2.5rem;
+    }
+
+    .new_arrivals_content h3 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .why_section .why_item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .why_section .section_row {
+        justify-content: center
+    }
+}
+
+@media screen and (max-width:64rem) {
+    .why_item .section_row {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .why_section .why_item {
+        padding: 1rem;
+        width: 220px;
+    }
+
+    .shop_icons {
+        width: 4.5rem;
+    }
+
+    .why_item .detail_box h5 {
+        font-size: 1.6rem;
+    }
+
+    .why_item .detail_box p {
+        margin: 1rem;
+    }
+
+    .new_arrivals_box {
+        flex-direction: column;
+    }
+
+    .new_arrivals_content {
+        text-align: center;
+    }
+
+    .season_collection {
+        margin: unset;
+    }
+}

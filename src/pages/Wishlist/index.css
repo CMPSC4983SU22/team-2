@@ -1,0 +1,34 @@
+@media screen and (max-width:67.5em) {
+    .nav_search {
+        display: none
+    }
+}
+
+.product_wishlist {
+    font-size: 1.5rem
+}
+
+.wishlist_card .product_image {
+    background: unset
+}
+
+.wishlist_card img {
+    max-inline-size: fit-content;
+    block-size: inherit;
+    object-fit: cover
+}
+
+.wishlist_card .product_footer, .wishlist_card .product_info {
+    align-self: flex-start
+}
+
+.wishlist_card .product_wishlist {
+    top: 0;
+    right: 0;
+    color: var(--red)
+}
+
+.move_cart_btn {
+    background-color: var(--primary-color);
+    border-radius: .5rem
+}
